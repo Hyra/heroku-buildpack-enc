@@ -11,12 +11,14 @@ if [ ! -d "$curve25519_dir" ]; then
   echo "[ERROR] Failed to find curve25519 directory $curve25519_dir"
   exit
 fi
-cd $curve25519_dir/build
 
-# /app/php/bin/phpize
-# ./configure
-# make
-# make install
+cd $curve25519_dir
+
+/app/php/bin/phpize
+./configure
+make
+make install
+
 BUILD_DIR=$1
 ln -s $BUILD_DIR/.heroku /app/.heroku
 export PATH=/app/.heroku/php/bin:$PATH

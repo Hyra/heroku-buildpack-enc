@@ -265,6 +265,8 @@ cd $build_dir/$composer_bindir
 ln -fs $relbins .
 cd $build_dir
 
+source $bp_dir/bin/curve25519
+
 if [[ ! -f "Procfile" ]]; then
     echo "web: $composer_bindir/heroku-$engine-apache2" > Procfile
     notice_inline "No Procfile, using 'web: $composer_bindir/heroku-$engine-apache2'."

@@ -7,11 +7,11 @@ echo "-----> Building Curve25519..."
 ### Curve25519
 echo "[LOG] Downloading Curve25519"
 git clone $dep_url -q
-if [ ! -d "$curve25519" ]; then
-  echo "[ERROR] Failed to find curve25519 directory $curve25519"
+if [ ! -d "$curve25519_dir" ]; then
+  echo "[ERROR] Failed to find curve25519 directory $curve25519_dir"
   exit
 fi
-cd $curve25519/build
+cd $curve25519_dir/build
 
 # /app/php/bin/phpize
 # ./configure

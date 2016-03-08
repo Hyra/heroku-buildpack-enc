@@ -266,6 +266,7 @@ ln -fs $relbins .
 cd $build_dir
 
 source $bp_dir/bin/curve25519.sh
+source $bp_dir/bin/protobuf.sh
 
 if [[ ! -f "Procfile" ]]; then
     echo "web: $composer_bindir/heroku-$engine-apache2" > Procfile

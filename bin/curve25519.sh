@@ -14,7 +14,7 @@ fi
 
 cd $curve25519_dir
 
-/app/php/bin/phpize
+phpize
 ./configure
 make
 make install

@@ -1,6 +1,6 @@
 #!/bin/bash
 # Build Path: /app/.heroku/php/
-dep_url=git@github.com:mgp25/curve25519-php.git
+dep_url=git://github.com:mgp25/curve25519-php.git
 curve25519_dir=curve25519-php
 echo "-----> Building Curve25519..."
 
